@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-girl" viewBox="0 0 40 32">
+<path d="M0 0h40.365v32h-40.365v-32z"></path>
+</symbol>
+<symbol id="icon-milk" viewBox="0 0 32 32">
+<path d="M0 0h31.556v32h-31.556v-32z"></path>
+</symbol>
+<symbol id="icon-icecream" viewBox="0 0 14 32">
+<path d="M0 0h13.558v32h-13.558v-32z"></path>
+</symbol>
+</defs>
+</svg>

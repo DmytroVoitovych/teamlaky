@@ -1,33 +1,163 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
+<div class="background">
+  <div class="modal__open is-hidden" data-modal>
+    <button class="close__btn" data-modal-close>
+      <svg width="14" ; height="14" ;>
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="header__button--modal" type="button">
+      Buy now
+      <svg width="6" height="10">
+        <use href="./img/symbol-defs.svg#icon-point"></use>
+      </svg>
+    </button>
+    <nav class="modal__nav">
+      <ul class="header__list--modal">
+        <li class="header__li--modal">
+          <a class="header__link--modal --current" href="">Home</a>
+        </li>
+        <li class="header__li--modal"><a class="header__link--modal" href="">About us</a></li>
+        <li class="header__li--modal">
+          <a class="header__link--modal" href="">How it’s made?</a>
+        </li>
+        <li class="header__li--modal">
+          <a class="header__link--modal" href="">Our products</a>
+        </li>
+        <li class="header__li--modal"><a class="header__link--modal" href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Плагин
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-    хранятся в папке
-    <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-    <code>index.html</code>.
-  </p>
+  <div class="container">
+    <header class="header">
+      <a href="" class="header__logo"
+        ><img src="./img/logo.png" width="199" height="50" alt="logo"
+      /></a>
+      <nav>
+        <ul class="header__list">
+          <li class="header__li"><a class="header__link --current" href="#home">Home</a></li>
+          <li class="header__li"><a class="header__link" href="#about">About us</a></li>
+          <li class="header__li"><a class="header__link" href="#made">How it’s made?</a></li>
+          <li class="header__li"><a class="header__link" href="#products">Our products</a></li>
+          <li class="header__li"><a class="header__link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="modal is" data>
+          <button class="modal__btn" type="button" data-modal-open>
+            <svg width="20" height="12">
+              <use href="./img/symbol-defs.svg#icon-Burger"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <button class="header__button is" type="button" da>
+        Buy now
+        <svg width="6" height="10">
+          <use href="./img/symbol-defs.svg#icon-point"></use>
+        </svg>
+      </button>
+    </header>
+    <section class="hero">
+      <div class="hero__box">
+        <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+        <ul class="hero__list">
+          <li class="hero__li"><button class="hero__btn">Products</button></li>
+          <li class="hero__li"><button class="hero__btn">How it’s made?</button></li>
+        </ul>
+        <div class="flex__box">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/milk1x.webp 1x, ./img/milk2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/milk1xp.png 1x, ./img/milk2xp.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279.5px)"
+              srcset="./img/milkt1xw.webp 1x, ./img/milkt2xw.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)and (max-width: 1279.5px)"
+              srcset="./img/milkt1x.png 1x, ./img/milkt2x.png 2x"
+              type="image/png"
+            />
 
-  <p>
-    Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-    части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-    когда в одном HTML-файле пишет несколько человек сразу.
-  </p>
+            <img src="./img/milk1xp.png" alt="Milk on glass" />
+          </picture>
 
-  <p>
-    Синтаксис добавление фрагмента в главный файл:
-    <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-  </p>
-
-  <div class="background"></div>
-</article>
+          <div class="hero__desc--box">
+            <p class="hero__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <button class="hero_btn--slide"></button>
+          </div>
+        </div>
+      </div>
+      <ul class="hero__list--num">
+        <li class="hero__num">16 <span>cafes</span></li>
+        <li class="hero__num">23 <span>food trucks</span></li>
+      </ul>
+      <picture class="hero__fon">
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/icecream1x.webp 1x, ./img/icecream2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/icecream1xp.png 1x, ./img/icecream2xp.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px) and (max-width: 1279.5px)"
+          srcset="./img/icecream1xw.webp 1x, ./img/icecream2xw.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)and (max-width: 1279.5px)"
+          srcset="./img/icecreamt1x.png 1x, ./img/icecreamt2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767.5px)"
+          srcset="./img/mob1xp.webp 1x, ./img/mob2xp.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767.5px)"
+          srcset="./img/mob1x.png 1x, ./img/mob2x.png 2x"
+          type="image/png"
+        />
+        <img src="./img/icecream1xp.png" alt="icecream" />
+      </picture>
+      <picture class="hero__fon--girl">
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/girl1x.webp 1x, ./img/girl2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/girl1xp.png 1x, ./img/girl2xp.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px) and (max-width: 1279.5px)"
+          srcset="./img/girlt1xw.webp 1x, ./img/girlt2xw.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)and (max-width: 1279.5px)"
+          srcset="./img/girlt1x.png 1x, ./img/girlt2x.png 2x"
+          type="image/png"
+        />
+        <img src="./img/girl1xp.png" alt="icecream" />
+      </picture>
+    </section>
+  </div>
+</div>

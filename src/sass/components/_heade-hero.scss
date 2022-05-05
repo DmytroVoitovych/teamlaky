@@ -1,0 +1,90 @@
+.background{
+ background-color: #FFB8CA;
+@media screen and (max-width: 767.5px) {
+overflow: hidden;    
+}
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+
+    nav{
+    z-index: 1;
+
+    @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+     margin-left: auto;
+     margin-right: 32px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+        padding-top: 32px;
+    }
+
+    @media screen and (max-width: 767.5px) {
+        padding-top: 8px;
+    }
+    }
+
+
+.header__list{
+    display: flex;
+
+    @media screen and (max-width: 1279.5px) {
+        display: none;
+    }
+}
+
+.header__li:not(:last-child){
+margin-right: 35px;
+}
+
+.header__link{
+    padding: 15px 0;
+    color: var(--main-color);
+    @extend %middle-font;
+    &.--current{
+    color: var(--akcent-color);    
+    }
+}
+
+.header__button.is{
+    max-width: 159px;
+    width: 100%;
+    height: 44px;
+    @extend %align-flex;
+    background: var(--main-color);
+    border-radius: 22px;
+    @extend %middle-font; 
+    color: var(--akcent-color);   
+    padding: 0;
+    border: 0;
+    transition: var(--kubik);
+    cursor: pointer;
+    &:hover{
+    background: var(--background-hover);    
+    }
+
+    svg{
+     margin-left: 12px;  
+     position: relative;
+     top: 1px; 
+    }
+
+    @media screen and (max-width: 767.5px) {
+        display: none;
+    }
+
+    
+}
+
+.header__button{
+    display: none;
+}
+
+.header__logo{
+    z-index: 1;
+}

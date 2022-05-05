@@ -4,4 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+@import "./utils/variables";
+@import "./utils/placeholder";
+@import "./components/basic";
+@import "./components/heade-hero";
+@import "./components/hero";
+@import "./components/modal";
